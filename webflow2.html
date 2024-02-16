@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="webflow1.css">
+</head>
+
+
+    <body class="body">
+            <div class="header">
+                <div class="logo"> <img src="webflow pix/logo.svg" alt=""></div>
+                <div class="navbar">
+                    <a href="">Features</a>
+                    <a href="">Request a Demo</a></div>
+                    <div><a href="" class="signup">Signup for the Waitlist</a></div>
+                </div>
+
+            </div>
+
+
+        <section class="section1">
+            
+            <div class="div1">
+                <div></div>
+                <h1 class="heading">A Calendar for Space Travel</h1>
+                <p class="paragraph">The scheduling tool to help you stay organized on Earth and beyond. With multi-device sync , including those on spacecraft, you'll never miss a meeting or important event no matter where you are in the galaxy.</p>
+            <a href="#" class="button">Join the waitlist for early access</a>
+            <img class="calenderimage"  src="space calender.jpg" alt="">
+            <img class="calenderimage"  src="card1.jpg" alt="">
+            <img class="calenderimage"  src="card2.jpg" alt="">
+            <img class="calenderimage"  src="card3.jpg" alt="">
+            <img class="calenderimage"  src="card4.jpg" alt="">
+        </div>
+        </section>
+
+        <section class="section2">
+            <div class="trusted"><p>Trusted by:</p></div>
+            <div class="div2">
+                <div><img class="logo-scroll" src="icon4.svg" alt=""></div>
+                <div><img class="logo-scroll" src="icon2.svg" alt=""></div>
+                <div><img class="logo-scroll" src="icon3.svg" alt=""></div>
+                <div><img class="logo-scroll" src="icon1.svg" alt=""></div>
+                <div><img class="logo-scroll" src="icon5.svg" alt=""></div>
+                <div><img class="logo-scroll" src="icon6.svg" alt=""></div>
+            </div>
+        </section>
+
+        <section class="section3">
+            <h2 class="section3-heading">Features of every need</h2>
+            <div class="cards">
+                <div>
+                    <img class="cardsize" src="card1.jpg" alt="">
+                    <h3 class="section3-subheading">Daily Digest</h3>
+                    <p class="paragraph">Confusion is over. Daily digest makes your calendar easy to use so you know exactly what's next.</p>
+                </div>
+                <div>
+                    <img class="cardsize" src="card2.jpg" alt="">
+                    <h3 class="section3-subheading">AI Assistant</h3>
+                    <p class="paragraph">No writing required. AI will take care of your rescheduling messages.</p>
+                </div>
+                <div>
+                    <img class="cardsize" src="card3.jpg" alt="">
+                    <h3 class="section3-subheading">Checker</h3>
+                    <p class="paragraph">Checker will find and resolve every conflict whatever orbit you're in.</p>
+                </div>
+                <div>
+                    <img class="cardsize" src="card4.jpg" alt="">
+                    <h3 class="section3-subheading">Calculator</h3>
+                    <p class="paragraph">No more math for you. Temporal, orbital field and numbers. Calculator does all the work.</p>
+                </div>
+                <div>
+                    <img class="cardsize" src="card5.jpg" alt="">
+                    <h3 class="section3-subheading">Time Zoner</h3>
+                    <p class="paragraph">You'd expect calculator and checker to do this. This is another feature.</p>
+                </div>
+                <div>
+                    <img class="cardsize" src="card6.jpg" alt="">
+                    <h3 class="section3-subheading">Connector</h3>
+                    <p class="paragraph">No more socialization required. Connector finds all the people that you need to meet.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section4">
+            <div class="section4-div">
+                <h2>Sample Form</h2>
+                <form action="submit.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+            
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            
+                    <input type="submit" value="Submit">
+                </form>
+            
+            </div>
+
+        </section>
+    </body>
+    <script>
+        let slideIndex = 0;
+    
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("calenderimage");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 1000); // Change slide every 2 seconds
+        }
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        showSlides(); // Start the slideshow
+    </script>
+</html>
